@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="event.css">
+    <title>Events App</title>
+</head>
+<body>
+
+    <div id="loader">Loading...</div>
+    <p style="text-align:center;"><img src="logo.jpg" alt="Logo" width="50"height="30"></p>
+    <div class="menu-btn-container" style="float: left">
+                    <img src="https://dl.dropbox.com/s/lf253sp8pctzs3h/menu%281%29.svg?dl=0" style="padding:10px;" alt="menu button" onclick="openNav()">
+                </div>
+    <div class="search-bar-container" align="right">
+                    <img src="https://dl.dropbox.com/s/zkpyvjxtctqio6a/search.svg?dl=0" style="padding:10px;" alt="search bar">
+                </div>
+
+    <div id="App">
+        
+        <div id="home-screen">
+            
+            <div class="home-screen-header-container">
+                <div class="header-text-container">
+                    Events
+                </div>
+                
+            </div>
+
+            <div class="events-card-container">
+                <div class="card-data-container">
+                    <div class="data-main-one">
+                        
+                        <div id="event-name-container">Books Talk</div>
+                        <div id="venue-container">Pune, India</div>
+
+                    </div>
+                    <div class="data-main-two">
+
+                        <div id="time-container">Jan 1, 2022</div>
+
+                    </div>
+                </div>
+                <div class="main-card-container" id="card-container">
+                </div>
+            </div>
+
+            <div class="home-screen-footer-container">
+            	<div class="chat" style="position: absolute; bottom: 12px">
+                    <img src="chat.png" alt="chat" width ="60"height="60">
+                </div>
+                
+                <div class="add-event-container">
+                	<img src="add event.png" alt="add event" width ="100"height="100" >
+                </div>
+            </div>
+
+        </div>
+
+        <div id="event-details-screen">
+            
+            <div class="event-banner-container">
+        
+                <div class="back-btn-container">
+                    
+                    <div id="back-btn" onclick="backBtn()">
+                        
+                        <img src="https://dl.dropbox.com/s/jpnk5cs7qveiwbm/left-arrow%281%29.svg?dl=0" alt="back button">
+
+                    </div>
+                    <div id="page-name">Event Details</div>
+
+                </div>
+
+            </div>
+
+            <div class="event-details-main">
+                        
+                <div class="details-event-name">
+                    <span></span>
+                    <button data-i="no">Interested</button>
+                </div>
+                <div class="details-event-location"></div>
+                <div class="details-event-time"></div>
+
+                <div class="details-options-container">
+                    
+                    <button>Add to calender</button>
+                    <button>
+                        <span>Know more</span>
+                        <img src="https://dl.dropbox.com/s/a91u0mrgctrmye3/right-arrow.svg?dl=0" style="transform: rotateZ(180deg)">
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="navigation-screen">
+            
+            <nav>
+                <a href="#"><img src="activities.png" width="50" height="50"></a>
+                <a href="#"><img src="notification.png" width="50" height="50"></a>
+                <a href="#"><img src="friends.png" width="50" height="50"></a>
+                <a href="#"><img src="profile.png" width="50" height="50"></a>
+            </nav>
+
+        </div>
+
+    </div>
+
+
+    <script src="event.js"></script>
+</body>
+</html>
